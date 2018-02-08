@@ -5,7 +5,6 @@ $(document).ready(function() {
   const crystalImageTwo = $('#crystalTwo');
   const crystalImageThree = $('#crystalThree');
   const crystalImageFour = $('#crystalFour');
-  const result = $('#result');
 
   let winCount = 0;
   let loseCount = 0;
@@ -25,11 +24,21 @@ $(document).ready(function() {
 
   counterCheck = (currentTotal, total) => {
     if (currentTotal === total) {
-      result.text('You won! Play again!');
+      swal({
+        title: 'Good job!',
+        text: 'You matched the counter to the number!',
+        icon: 'success',
+        button: "Let's play again!"
+      });
       winCount += 1;
       init();
     } else if (currentTotal > total) {
-      result.text('You lost. Play again!');
+      swal({
+        title: 'Oh no!',
+        text: 'Your counter is greater than the number!',
+        icon: 'error',
+        button: "Let's play again!"
+      });
       loseCount += 1;
       init();
     }
