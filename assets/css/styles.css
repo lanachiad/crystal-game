@@ -1,4 +1,88 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Nanum Brush Script', cursive;
+}
+
+h3,
+p,
+span {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 40pt;
+  text-align: center;
+}
+
+h2 {
+  display: inline;
+  font-size: 35pt;
+}
+
+.score-keeper-wrapper,
+.result-wrapper,
+.number-to-guess-wrapper,
+.counter-wrapper {
+  width: 50%;
+}
+
+.score-keeper-wrapper,
+.result-wrapper,
+.number-to-guess-wrapper,
+.crystal-wrapper,
+.counter-wrapper {
+  margin: auto;
+  text-align: center;
+}
+
+.score-keeper-wrapper {
+  border: 2px black solid;
+  display: flex;
+  justify-content: space-around;
+}
+
+.score-keeper-wrapper h3 {
+  display: inline;
+}
+
+#win-count,
+#lose-count {
+  color: navy;
+}
+
+#number-to-guess,
+#counter {
+  font-size: 32pt;
+}
+
+.number-to-guess-wrapper,
+.counter-wrapper {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.crystal-wrapper {
+  width: 75%;
+}
+
 .crystal-img {
+  border: 1px black solid;
   height: 200px;
+  margin-right: 20px;
   width: 200px;
+}
+
+.crystal-img:last-of-type {
+  margin-right: 0px;
 }
